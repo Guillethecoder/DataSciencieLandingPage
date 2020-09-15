@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating the DOM by Guillermo</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+    <script src="https://kit.fontawesome.com/0c0bd8a8fa.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HTML Follows BEM naming conventions
+    IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list"></ul>
+        </nav>
+    </header>
+    <main>
+        <header class="main__hero">
+            <h1>My School Year</h1>
+        </header>
+        <!-- Each Section has an ID (used for the anchor) and
+        a data attribute that will populate the li node.
+        Adding more sections will automatically populate nav.
+        The first section is set to active class by default -->
+        <section id="section1" data-nav="Legal Aspects of Data" class="your-active-class">
+            <div class="landing__container">
+                <h2>Legal Aspects of Data</h2>
+                <p>
+                    Legal aspects of data is a semester basic training course that is taught in the first semester of the second year of the Bachelor of Data Science and its teaching load is 6 ECTS credits. The objective of the course is for students to obtain basic applied legal knowledge to the use of data related to different areas of the current legal regime.
+                </p>
+                <p>
+                    The student must have an exhaustive knowledge of the European and Spanish regulations on the subject of personal data protection (European and Spanish LOPD: description and main issues), including regulations of Cybersecurity, after understanding Public and Private Law and the system of legal sources. You must also know Intellectual Property and data-based products. You must also know the regulations for trust services and digital identification (electronic signature) and all related issues. to the Internet and services regulations to the information society.
+                </p>
+
+
+            </div>
+        </section>
+
+        <section id="section2" data-nav="Statistical Inference">
+            <div class="landing__container">
+                <h2>Statistical Inference</h2>
+                <p> Statistical inference is the process through which inferences about a population are made based on certain statistics calculated from a sample of data drawn from that population. </p>
+
+                <p>
+                    This course presents the basic concepts of statistical inference. We will work on the definition, and the use, of probabilistic models. Estimation problems, and hypothesis tests, will be analyzed in some of the simplest probabilistic models.
+                </p>
+            </div>
+        </section>
+
+        <section id="section3" data-nav="Data Management">
+            <div class="landing__container">
+                <h2>Data Management</h2>
+                <p> The volume of data that is generated, stored and processed today grows unstoppably. Although relational databases have demonstrated their ability to adapt successfully to growing needs, traditional database architectures and models can sometimes be insufficient or inadequate to deal with the volume and type of data to be managed.</p>
+
+                <p> This course covers both new parallel and distributed database architectures, new database models generally known as NoSQL, as well as data warehousing tools and techniques, and multidimensional data models, along with an overview of processes. Integration and data migration.The course will provide the capabilities to analyze the advantages and disadvantages of the different technologies to be able to select the most appropriate ones in each context.</p>
+            </div>
+        </section>
+        <section id="section4" data-nav="Data Storage Infrastructure">
+            <div class="landing__container">
+                <h2>Data Storage Infrastructure</h2>
+                <p> This subject is part of the computer science training of the degree in data science, it is based on the programming knowledge previously acquired in the subjects "Programming Foundations" and "Data Structures and Algorithms" and serves as a basis for later subjects such as "Networks and security ”,“ Parallel programming ”or“ Big data ”.</p>
+
+                <p> Throughout the course, students learn what operating systems are, how they rely on the physical components of computers, what services they offer and how they are managed. It deepens especially at different levels of local storage, starting with storage devices and ending with local file systems. The techniques of resource virtualization are also covered and the physical support used in «Big Data» applications is introduced.</p>
+            </div>
+        </section>
+
+        <section id="section5" data-nav="Linear Models">
+            <div class="landing__container">
+                <h2>Linear Models</h2>
+                <p>
+                    The subject "Linear Models" is a compulsory subject offered in the second semester of the second year of the Degree in Data Science. From the subjects "Probability", offered in the first course, and "Statistical Inference" offered in the first semester of the second course, the purpose of this subject is twofold: to provide the student with the basic theoretical rudiments in statistical modeling, and practical knowledge of its use in usual experimental situations.
+                </p>
+
+                <p>Knowledge of Linear Algebra, Probability, and Statistical Inference is required</p>
+            </div>
+        </section>
+
+        <section id="section6" data-nav="Image Processing">
+            <div class="landing__container">
+                <h2>Image Processing</h2>
+                <p> The fundamentals of image processing are introduced from the point of view of data science. The concept of digital image and different ways of representing an image are presented. Basic image preprocessing methods for contrast modification, noise removal, and edge enhancement are studied. Different techniques of image characteristics extraction are studied, as well as methods for image segmentation.</p>
+
+                <p> We will learn the representation of images, the Fourier transform of an image and its relationship to 2D convolution, apply image preprocessing methods for contrast modification, noise removal and edge enhancement, the different image representation formats, without compression and with compression (with loss or none), apply techniques for extracting features in an image (detection of corners, lines, and circular aspects), image segmentation, and being able to apply the basic methods for this task, among other things.</p>
+            </div>
+        </section>
+
+        <section id="section7" data-nav="Parallel Programming">
+            <div class="landing__container">
+                <h2>Parallel Programming</h2>
+                <p>In this subject the student is introduced to parallel, concurrent and distributed programming. It will begin by introducing the idea of ​​characterization or profiling of a program that will allow us to locate the elements of the program that are more expensive and from that information we will proceed to give ideas for possible program improvement.</p>
+
+                <p> Next, different models of parallel programming and basic ideas of the different architectures that support it will be seen. From these models, it will be necessary to obtain a basic knowledge of the design of concurrent algorithms and the measurement of their efficiency. They will propose different problems and the efficiency of their sequential approach will be compared against the concurrent approach.</p>
+            </div>
+        </section>
+
+        <section id="section8" data-nav="Networks and Security">
+            <div class="landing__container">
+                <h2>Networks and Security</h2>
+                <p> Networks and Security are two fundamental requirements of computer systems, computing and the use of data.Any task that we currently tackle, which requires the acquisition, use and treatment of data, must be based on the use of communication networks and In addition, take into account the security of the information in the whole process (from its acquisition to its treatment and its publication).</p>
+
+                <p> The security requirements and the benefits in the use of networks change at an especially fast rate basically due to dependence on computer systems, due to the requirement of these systems and the appearance of new technologies. In this context, the subject is designed to give a vision of set of the essential elements of networks and the security of computer systems, seeking that the student learn to follow this process of continuous change and be able to keep up-to-date and use, at all times, the most appropriate techniques.</p>
+            </div>
+        </section>
+
+        <section id="section9" data-nav="Signals and Systems">
+            <div class="landing__container">
+                <h2>Signals and Systems</h2>
+                <p> In the Signals and System course, a series of concepts and techniques are studied to work on signals that have a certain temporal and / or spatial structure, such as biosignals (ECG, EEG, etc.) or images, which are data that appear from frequently so a data scientist needs to know about them.</p>
+
+                <p> This course aims to develop the mathematical foundations to handle this type of data (Z and Fourier transform) as well as the associated operations for its treatment (convolution / correlation).</p>
+            </div>
+        </section>
+
+        <section id="section9" data-nav="Data Visualization">
+            <div class="landing__container">
+                <h2>Data Visualization</h2>
+                <p> The data scientist is often faced with having to use graphs both from an exploratory point of view and transmit results. Therefore, you need to acquire knowledge about the theory of perception and color, what are the elements of a visualization system and the main tools available to you to create appropriate visualizations. In the same way, you must know which types of graphics are the most appropriate for each type of data, especially highlighting those that, due to their special nature, require particular tools and methods such as spatial data.</p>
+
+                <p> Los gráficos interactivos son una parteimportante en el proceso de extracción de conocimiento  por parte de un usuario, por esta razón elestudiante  será  capaz  de  manejar  este  tipo  de  gráficos.  Finalmente,   con  todo  lo  comentadoanteriormente el estudiante debe ser capaz de “encajar las piezas” en el puzzle  que constituiría uninforme  con información visual o un cuadro de mando completo.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="page__footer">
+        <p>&copy Udacity</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
